@@ -1,8 +1,18 @@
 .gameWrapper{
   position:relative;
   width:640px;
-  margin: 0 auto;
+  margin: auto;
 
+}
+
+@media only screen and (max-width: 480px) {
+    .gameWrapper {
+      -ms-transform: scale(0.5, 0.5); /* IE 9 */
+  -webkit-transform: scale(0.5, 0.5); /* Safari */
+  transform: scale(0.5, 0.5);
+          width:30%;
+        float:left;
+    }
 }
 
 .gameBack{
