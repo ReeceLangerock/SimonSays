@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0">
     <title>Simon Sez</title>
-    <link rel="stylesheet" href="style.css" type ="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src = "javascript/config.js"></script>
-    <script src = "javascript/simonGame.js"></script>
+    <script src="javascript/config.js"></script>
+    <script src="javascript/simonGame.js"></script>
 
 </head>
 
@@ -28,13 +28,24 @@
 
 
             <div class="circle">
+                <br>
                 <h1>SIMON</H1>
-                  <div>
-                  <button id = "startButton">Start</button>
-                  <button id = "strictButton">Strict</button>
-                  <button id = "restartButton">Restart</button>
-                  <h2 id = "counter">00<h2>
+
+                <div class="buttonRow">
+                    <button id="startButton" class="startButton"></button>
+                    <label id="strictSlider" class="switch">
+  <input id = "strictCheckbox" type="checkbox">
+  <div class="slider round"></div>
+</label>
+                    <button id="restartButton" class="restartButton"></button>
+
                 </div>
+                <div style="margin-left:6px">
+                    <span class="labelSpan"> Start</span>
+                    <span class="labelSpan">Strict</span>
+                    <span class="labelSpan">Restart</span>
+                </div>
+                <h2 class="counter" id="counter">00<h2>
             </div>
 
         </div>
